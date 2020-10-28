@@ -1,0 +1,127 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 343
+  Width = 456
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL'
+      'Database=aplikasi_stok'
+      'Server=localhost'
+      'User_Name=root')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 24
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM produk')
+    Left = 48
+    Top = 96
+    object FDQuery1id_produk: TFDAutoIncField
+      FieldName = 'id_produk'
+      Origin = 'id_produk'
+      ProviderFlags = [pfInWhere, pfInKey]
+    end
+    object FDQuery1nama_produk: TStringField
+      FieldName = 'nama_produk'
+      Origin = 'nama_produk'
+      Required = True
+      Size = 100
+    end
+    object FDQuery1harga: TIntegerField
+      FieldName = 'harga'
+      Origin = 'harga'
+      Required = True
+    end
+    object FDQuery1stokproduk: TIntegerField
+      FieldName = 'stokproduk'
+      Origin = 'stokproduk'
+      Required = True
+    end
+    object FDQuery1satuan: TStringField
+      FieldName = 'satuan'
+      Origin = 'satuan'
+      Required = True
+    end
+    object FDQuery1tglmasuk: TDateField
+      FieldName = 'tglmasuk'
+      Origin = 'tglmasuk'
+      Required = True
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 128
+    Top = 96
+  end
+  object FDQuery2: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT *  FROM penjualan')
+    Left = 216
+    Top = 128
+    object FDQuery2nopenjualan: TStringField
+      FieldName = 'nopenjualan'
+      Origin = 'nopenjualan'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object FDQuery2id_produk: TIntegerField
+      FieldName = 'id_produk'
+      Origin = 'id_produk'
+      Required = True
+    end
+    object FDQuery2tglpenjualan: TDateField
+      FieldName = 'tglpenjualan'
+      Origin = 'tglpenjualan'
+      Required = True
+    end
+    object FDQuery2nama_produk: TStringField
+      FieldKind = fkLookup
+      FieldName = 'nama_produk'
+      LookupDataSet = FDQuery1
+      LookupKeyFields = 'id_produk'
+      LookupResultField = 'nama_produk'
+      KeyFields = 'id_produk'
+      Size = 100
+      Lookup = True
+    end
+    object FDQuery2stokproduk: TIntegerField
+      FieldKind = fkLookup
+      FieldName = 'stokproduk'
+      LookupDataSet = FDQuery1
+      LookupKeyFields = 'id_produk'
+      LookupResultField = 'stokproduk'
+      KeyFields = 'id_produk'
+      Lookup = True
+    end
+    object FDQuery2harga_produk: TIntegerField
+      FieldKind = fkLookup
+      FieldName = 'harga_produk'
+      LookupDataSet = FDQuery1
+      LookupKeyFields = 'id_produk'
+      LookupResultField = 'harga'
+      KeyFields = 'id_produk'
+      Lookup = True
+    end
+    object FDQuery2itemterjual: TIntegerField
+      FieldName = 'itemterjual'
+      Origin = 'itemterjual'
+      Required = True
+    end
+    object FDQuery2total_penjualan: TIntegerField
+      FieldName = 'total_penjualan'
+      Origin = 'total_penjualan'
+      Required = True
+    end
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQuery2
+    Left = 296
+    Top = 128
+  end
+end

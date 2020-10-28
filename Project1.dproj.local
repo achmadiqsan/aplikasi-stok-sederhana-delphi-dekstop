@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/06/29 20:25:59.000.428,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/28 10:53:48.000.608,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/07/28 11:50:28.000.260,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/15 18:30:53.000.181,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/16 09:45:57.000.906,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/19 19:45:45.000.191,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/28 17:44:27.000.656,=C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/10/28 17:48:26.000.985,C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\Aplikasi_Stok\Unit1.dfm</Transaction>
+    <Transaction>2020/10/28 17:48:26.000.985,C:\Users\Near\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\Aplikasi_Stok\Unit1.pas</Transaction>
+    <Transaction>2020/10/28 17:48:29.000.879,C:\Users\Near\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\Aplikasi_Stok\Project1.dproj</Transaction>
+    <Transaction>2020/10/28 17:48:41.000.000,=D:\Aplikasi_Stok\Unit2.pas</Transaction>
+    <Transaction>2020/10/28 18:03:36.000.558,=D:\Aplikasi_Stok\Unit3.pas</Transaction>
+    <Transaction>2020/10/28 18:05:51.000.127,D:\Aplikasi_Stok\Unit3.pas=D:\Aplikasi_Stok\datamodule.pas</Transaction>
+    <Transaction>2020/10/28 18:05:51.000.127,D:\Aplikasi_Stok\Unit3.dfm=D:\Aplikasi_Stok\datamodule.dfm</Transaction>
+    <Transaction>2020/10/28 18:58:22.000.464,=D:\Aplikasi_Stok\Unit3.pas</Transaction>
+    <Transaction>2020/10/28 19:19:48.000.671,=D:\Aplikasi_Stok\Unit4.pas</Transaction>
+    <Transaction>2020/10/28 21:09:02.000.232,=D:\Aplikasi_Stok\Unit5.pas</Transaction>
+    <Transaction>2020/10/28 21:21:50.000.115,=D:\Aplikasi_Stok\Unit6.pas</Transaction>
+  </Transactions>
+</BorlandProject>

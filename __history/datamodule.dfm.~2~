@@ -1,0 +1,29 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 343
+  Width = 456
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL'
+      'Database=aplikasi_stok'
+      'Server=localhost'
+      'User_Name=root')
+    Connected = True
+    LoginPrompt = False
+    Left = 48
+    Top = 24
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT * FROM produk')
+    Left = 48
+    Top = 96
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 128
+    Top = 96
+  end
+end
